@@ -14,7 +14,7 @@ class FirstCommandSet(CommandSet):
 
     parser = Cmd2ArgumentParser(description="CHANGE ME")
     parser.add_argument(
-        "text", choices_provider=_get_aliases, help="HELP TEXT"
+        "text", choices_provider=['one', 'two'], help="HELP TEXT"
     )
 
     @with_argparser(parser)
